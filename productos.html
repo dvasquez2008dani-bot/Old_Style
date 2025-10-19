@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa Elegante</title>
+  <link rel="stylesheet" href="../plan b/css/productos.css">
+</head>
+<body>
+
+  <!-- 🔹 NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../plan b/imagenes/Captura de pantalla 2025-10-11 131414.png" alt="Logo Tienda">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../plan b/index.html">Inicio</a></li>
+        <li><a href="../plan b/productos.html">Producto</a></li>
+        <li><a href="../plan b/colecciones02.html">Colecciones</a></li>
+        <li><a href="../plan b/Nosotros.html">Nosotros</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Buscar ropa...">
+      <button id="search-btn">Buscar</button>
+    </div>
+   <div class="cart" id="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+   
+  <!-- 🔹 PRODUCTOS -->
+  <section class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="grid-productos">
+
+      <div class="producto" data-nombre="Blusa Floral" data-precio="25">
+        <img src="../plan b/imagenes/Blusa Encanto Floral tarjetas numero 1.jpg" alt="Blusa">
+        <h3>Camisa Casual</h3>
+        <p>$25.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Pantalón Nube Gris" data-precio="45">
+        <img src="../plan b/imagenes/Pantalón Nube Gris tarjeta numero 2.jpg" alt="Pantalón">
+        <h3>Vestido Elegante</h3>
+        <p>$45.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Chaqueta Midnight" data-precio="30">
+        <img src="../plan b/imagenes/Chaqueta Midnight tarjeta numero 3.jpg" alt="Chaqueta">
+        <h3>Pantalón Jeans</h3>
+        <p>$30.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+   
+
+
+    <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+  </section>
+
+   
+   <!-- CARRUSEL -->
+  <section id="inicio" class="carousel-container">
+    <div class="carousel-slide fade">
+      <img src="../plan b/imagenes/fondo 1 carusel numero 2.0.jpg" alt="">
+      <div class="carousel-text">
+        <h1>Natural y relajada</h1>
+        <p>Ropa que abraza tu esencia. Cómoda, auténtica y hecha para brillar sin esfuerzo.</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide fade">
+      <img src="./imagenes/fondo 2 carusel numero 2.0.jpg" alt="">
+      <div class="carousel-text">
+        <h1>Moderna y juvenil</h1>
+        <p>Tu estilo, tus reglas. La moda que te sigue el ritmo, no al revés</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide fade">
+      <img src="../plan b/imagenes/fondo 3 carusel numero 2.0.jpg" alt="">
+      <div class="carousel-text">
+        <h1>Elegante y femenina</h1>
+        <p>Viste tus sueños con estilo. Cada prenda, una historia de elegancia y confianza</p>
+      </div>
+    </div>
+
+  <!--carusel numero 2.0-->
+  </section>
+   <section class="carrusel-container">
+    <button class="btn-prev">&#10094;</button>
+    <div class="carrusel">
+      
+        <section class="carusel-container">
+    <button class="arrow left" id="prev">&#10094;</button>
+
+    <div class="carusel" id="carusel">
+
+      <div class="producto" data-nombre="Camisa Formal" data-precio="45">
+        <img src="../plan b/imagenes/Camisa Formal 1.jpg" alt="Camisa Formal">
+        <h3>Camisa Formal</h3>
+        <p>$45.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Vestido Casual" data-precio="30">
+        <img src="../plan b/imagenes/Vestido Casual 2.jpg" alt="Vestido Casual">
+        <h3>Vestido Casual</h3>
+        <p>$30.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Pantalón Casual" data-precio="40">
+        <img src="../plan b/imagenes/Pantalón Casual 3.jpg" alt="Pantalón Casual">
+        <h3>Pantalón Acampanado</h3>
+        <p>$40.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Blusa Floral" data-precio="28">
+        <img src="../plan b/imagenes/Blusa Floral 5.jpg" alt="Blusa Floral">
+        <h3>Blusa Floral</h3>
+        <p>$28.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Chaqueta de Cuero" data-precio="85">
+        <img src="../plan b/imagenes/Chaqueta de Cuero 6.jpg" alt="Chaqueta de Cuero">
+        <h3>Chaqueta de Cuero</h3>
+        <p>$85.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Zapatos de Tacón" data-precio="55">
+        <img src="../plan b/imagenes/Zapatos de Tacón7.jpg" alt="Zapatos de Tacón">
+        <h3>Zapatos de Tacón</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Bolso de Mano" data-precio="35">
+        <img src="../plan b/imagenes/Bolso de Mano 8.jpg" alt="Bolso de Mano">
+        <h3>Bolso de Mano</h3>
+        <p>$35.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Gafas de Sol" data-precio="25">
+        <img src="../plan b/imagenes/Gafas de Sol 9.jpg" alt="Gafas de Sol">
+        <h3>Gafas de Sol</h3>
+        <p>$25.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Sombrero de Verano" data-precio="20">
+        <img src="../plan b/imagenes/10.jpg" alt="Sombrero de Verano">
+        <h3>Sombrero de Verano</h3>
+        <p>$20.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Bufanda de Lana" data-precio="18">
+        <img src="../plan b/imagenes/11.jpg" alt="Bufanda de Lana">
+        <h3>Bufanda de Lana</h3>
+        <p>$18.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+    </div>
+
+    <button class="arrow right" id="next">&#10095;</button>
+  </section>
+
+<!--targtas numero 2-->
+  <section class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="grid-productos">
+
+      <div class="producto" data-nombre="Camisa Casual" data-precio="25">
+        <img src="../plan b/imagenes/Camisa Casual.jpg" alt="Camisa">
+        <h3>Camisa Casual</h3>
+        <p>$25.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Vestido Elegante" data-precio="45">
+        <img src="../plan b/imagenes/Vestido Elegante.jpg" alt="Vestido">
+        <h3>Vestido Elegante</h3>
+        <p>$45.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Pantalón Jeans" data-precio="30">
+        <img src="../plan b/imagenes/Pantalón Jeans.jpg" alt="Pantalón">
+        <h3>Pantalón Jeans</h3>
+        <p>$30.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Chaqueta Moderna" data-precio="55">
+        <img src="../plan b/imagenes/Chaqueta Moderna.jpg" alt="Chaqueta">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+   
+
+
+    <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+  </section>
+ 
+  <!-- 🔹 CARRITO MODAL -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-cart">&times;</span>
+      <h2>Tu Carrito</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0.00</p>
+      <button id="checkout">Finalizar Compra</button>
+    </div>
+  </div>
+  <!-- 🔹 FOOTER -->
+  <footer id="contacto">
+    <p>© 2025 Tienda de Ropa Elegante | Diseñado con 💖</p>
+  </footer>
+
+  <script src="../plan b/js/productos.js"></script>
+</body>
+</html>

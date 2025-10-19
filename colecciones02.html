@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa Elegante</title>
+  <link rel="stylesheet" href="../plan b/css/colecciones02.css">
+</head>
+<body>
+
+  <!--NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../plan b/imagenes/Captura de pantalla 2025-10-11 131414.png" alt="Logo Tienda">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../plan b/index.html">Inicio</a></li>
+        <li><a href="../plan b/productos.html">Producto</a></li>
+        <li><a href="../plan b/colecciones02.html">Colecciones</a></li>
+        <li><a href="../plan b/Nosotros.html">Nosotros</a></li>
+        <li><a href="../plan b/Ofetas.html">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Buscar ropa...">
+      <button id="search-btn">Buscar</button>
+    </div>
+   <div class="cart" id="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+   <!--baner-->
+   <section class="promo-banner">
+    <div class="overlay"></div>
+    <div class="promo-content">
+      <h1> GRAN VENTA DE TEMPORADA </h1>
+      <p>Aprovecha hasta un 70% de descuento en tus artículos favoritos</p>
+      <a href="../plan b/Ofetas.html" class="promo-btn">Ver más descuentos</a>
+    </div>
+  </section>
+   
+  <!--PRODUCTOS -->
+  <section class="productos">
+    <h2>Nuestras Colecciones</h2>
+    <div class="grid-productos">
+
+      <div class="producto" data-nombre="Blusa Floral" data-precio="25">
+        <img src="../plan b/imagenes/Blusa Encanto Floral tarjetas numero 1.jpg" alt="Blusa">
+        <h3>Camisa Casual</h3>
+        <p>$25.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Pantalón Nube Gris" data-precio="45">
+        <img src="../plan b/imagenes/Pantalón Nube Gris tarjeta numero 2.jpg" alt="Pantalón">
+        <h3>Vestido Elegante</h3>
+        <p>$45.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Chaqueta Midnight" data-precio="30">
+        <img src="../plan b/imagenes/Chaqueta Midnight tarjeta numero 3.jpg" alt="Chaqueta">
+        <h3>Pantalón Jeans</h3>
+        <p>$30.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+   
+
+    <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+  </section>
+  
+  <!-- CARRUSEL1 -->
+  <section id="inicio" class="carousel-container">
+    <div class="carousel-slide fade">
+      <img src="../plan b/imagenes/fondo 1 carusel numero 2.0.jpg" alt="">
+      <div class="carousel-text">
+        <h1>Natural y relajada</h1>
+        <p>Ropa que abraza tu esencia. Cómoda, auténtica y hecha para brillar sin esfuerzo.</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide fade">
+      <img src="./imagenes/fondo 2 carusel numero 2.0.jpg" alt="">
+      <div class="carousel-text">
+        <h1>Moderna y juvenil</h1>
+        <p>Tu estilo, tus reglas. La moda que te sigue el ritmo, no al revés</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide fade">
+      <img src="../plan b/imagenes/fondo 3 carusel numero 2.0.jpg" alt="">
+      <div class="carousel-text">
+        <h1>Elegante y femenina</h1>
+        <p>Viste tus sueños con estilo. Cada prenda, una historia de elegancia y confianza</p>
+      </div>
+    </div>
+
+    <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+  </section>
+
+  <!--productos 2-->
+  <section class="productos">
+    <h2>Nuestras Colecciones</h2>
+    <div class="grid-productos">
+
+      <div class="producto" data-nombre="Blusa Floral" data-precio="25">
+        <img src="../plan b/imagenes/Blusa Encanto Floral tarjetas numero 1.jpg" alt="Blusa">
+        <h3>Camisa Casual</h3>
+        <p>$25.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Pantalón Nube Gris" data-precio="45">
+        <img src="../plan b/imagenes/Pantalón Nube Gris tarjeta numero 2.jpg" alt="Pantalón">
+        <h3>Vestido Elegante</h3>
+        <p>$45.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Chaqueta Midnight" data-precio="30">
+        <img src="../plan b/imagenes/Chaqueta Midnight tarjeta numero 3.jpg" alt="Chaqueta">
+        <h3>Pantalón Jeans</h3>
+        <p>$30.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+       <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+       <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="producto" data-nombre="Falda Viento Libre" data-precio="55">
+        <img src="../plan b/imagenes/Falda Viento Libre tarjeta numero 4.jpg" alt="Falda">
+        <h3>Chaqueta Moderna</h3>
+        <p>$55.00</p>
+        <button class="add-cart">Agregar al carrito</button>
+      </div>
+
+          <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+  </section>
+
+      <!--tarjetas numero 2-->
+  <section class="colecciones">
+    <div class="tarjeta">
+      <img src="../plan b/imagenes/Atelier Aura.jpg" alt="Colección Atelier Aura">
+      <div class="texto">
+        <h2>new arrivals</h2>
+        <p>Atelier Aura</p>
+        <a href="../plan b/Ofetas.html" class="btn-ver">VER MÁS</a>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <img src="../plan b/imagenes/NEW COLLECTION.jpg" alt="Colección Beautiful Legacy">
+      <div class="texto">
+        <h2>Beautiful Legacy</h2>
+        <p>NEW COLLECTION</p>
+        <a href="../plan b/Ofetas.html" class="btn-ver">VER MÁS</a>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <img src="../plan b/imagenes/LOVE · PORTOFINO.jpg" alt="Colección Love Portofino">
+      <div class="texto">
+        <h2>new arrivals</h2>
+        <p>LOVE · PORTOFINO</p>
+        <a href="../plan b/Ofetas.html" class="btn-ver">VER MÁS</a>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <img src="../plan b/imagenes/BOHO BLISS.jpg" alt="Colección Boho Bliss">
+      <div class="texto">
+        <h2>NEW ARRIVALS</h2>
+        <p>BOHO BLISS</p>
+        <a href="" class="btn-ver">VER MÁS</a>
+      </div>
+    </div>
+  </section>  
+
+  <!--CARRITO MODAL -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-cart">&times;</span>
+      <h2>Tu Carrito</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0.00</p>
+      <button id="checkout">Finalizar Compra</button>
+    </div>
+  </div>
+  <!--FOOTER -->
+  <footer id="contacto">
+    <p>© 2025 Tienda de Ropa Elegante</p>
+  </footer>
+
+  <script src="../plan b/js/colecciones02.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* 🔹 NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 15px 40px;
+  color: white;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fdd29e;
+}
+
+/* 🔹 SEARCH BAR */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#search-input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#search-btn {
+  background-color: #fdd29e;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background-color: #f2bac9;
+}
+
+/* 🔹 PRODUCTOS 1*/
+.productos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.productos h2 {
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 2em;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 15px rgba(255, 4, 4, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.add-cart {
+  margin-top: 10px;
+  background-color: #fdd29e;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.add-cart:hover {
+  background-color: #f2bac9;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  background-image: url("imagenes/promocion.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 30px auto;
+  width: 90%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.btn-banner {
+  background-color: #fff;
+  color: #ff4f81;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-banner:hover {
+  background-color: #ff4f81;
+  color: #fff;
+}
+
+/* 🔹 PRODUCTOS 1*/
+.productos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.productos h2 {
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 2em;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 15px rgba(255, 4, 4, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.add-cart {
+  margin-top: 10px;
+  background-color: #fdd29e;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.add-cart:hover {
+  background-color: #f2bac9;
+}
+
+/* Footer */
+footer {
+  background: #ff4f81;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
